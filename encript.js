@@ -8,7 +8,9 @@ const btn_encriptar = document.querySelector("btn_encriptar"); // boton encripta
 // const area_text = document.querySelector("area_text");  // seccion de img (exclamation), p(Solo letras minúsculas y sin acentos.) 
 // const cuadro_text = document.querySelector("cuadro_text"); // boton copiar
 const contenido = document.querySelector("#caja2"); // tarjeta derecha del muñeco y texto h2 (Ningun mensaje fue encontrado) p (Ingresa el texto que desees encriptar o desencriptar)
-// const btn_copiar = document.querySelector("copiar"); // boton copiar
+const btn_copiar = document.querySelector("copiar"); // boton copiar
+const textFound = document.querySelector(".text-found");
+const notFound = document.querySelector(".not-found");
 
 
 const textoCifrado = [
@@ -27,7 +29,8 @@ function btnEncriptar() {
 
 
     recuadroBlanco.value = resultado;
-
+    textFound.classList.remove("display-none");
+    notFound.classList.add("display-none");
 
 }
 
@@ -57,10 +60,19 @@ function btnDesencriptar() {
         let reemplazo = subArray[1]
         let reg = new RegExp (reemplazo, "g");
         textoAdDesencriptar = textoAdDesencriptar.replace(reg, vocal);
+    
     })
+
     recuadroBlanco.value = textoAdDesencriptar;  
+
+    textFound.classList.remove("display-none");
+    notFound.classList.add("display-none");
+    document.getElementById("muneco2").src = "./img/desencript.jpg";
 }
 
 
-
+function copiar(){
+navigator.clipboard.writeText(recuadroBlanco.value);
+alert ("El texto fue copiado correctamente");
+}
 

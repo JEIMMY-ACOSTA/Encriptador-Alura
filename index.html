@@ -17,35 +17,48 @@
     </div>
 
 
-    <main> <!--  div Class =container div  == main-->
-        <section class="cont-1"> <!--  div Class = encriptar div -->
+    <main> 
+        <section class="cont-1"> 
             <textarea name="text-area" class="texto" id="texto" cols="30" rows="10"
                 placeholder="Ingrese el texto a Encriptar"></textarea>
-            <!--  textarea Class =texto  texarea == Ingrese el texto a Encriptar-->
+           
 
-            <div class="area_text"> <!--  div Class =terminos div == area-text-->
+            <div class="area_text"> 
                 <img src="iconos/import.png" alt="exclamation" class="icono">
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
 
-            <div class="botones"> <!--  div Class =botones div = botones-->
+            <div class="botones"> 
                 <button class="btn_encriptar" type="button" onclick="btnEncriptar();">Encriptar</button>
                 <button class="btn_desencriptar" type="button" onclick="btnDesencriptar();">Desencriptar</button>
             </div>
         </section>
 
-        <section class="cont-2" id="caja2"> <!--  div Class =encriptado div -->
+        <section class="cont-2 not-found" id="caja2"> 
             <div class="img-muñeco">
-                <img src="img/Muñeco.png" alt="muñeco" class="muñeco1" id="muneco1"> <!--  img muñeco azul -->
+                <img src="img/Muñeco.png" alt="muñeco" class="muñeco1" id="muneco1"> 
             </div>
 
-            <div class="mensaje_Encriptador" id="caja"> <!--  div Class= mensaje encriptado div -->
-                <textarea name="text-area" class="recuadroBlanco" id="recuadroBlanco" cols="30" rows="10"></textarea>
+            <div class="mensaje_Encriptador" id="caja"> 
+           
                 <h2 class="title_mensage" id="titleMensage">Ningun mensaje fue encontrado</h2>
 
                 <p class="cuadro_text" id="cuadroText">Ingresa el texto que desees encriptar o desencriptar</p>
-                <!--  p id=parrafo p == cuadro-text-->
+    
 
+                <button class="btn_copiar" onclick="copiar()">Copiar</button>
+            </div>
+
+        </section>
+
+        <section class="cont-2 text-found display-none" id="caja2"> 
+            <div class="img-muñeco">
+                <img src="img/encriptar.jpg" alt="muñeco" class="muñeco1" id="muneco2"> 
+            </div>
+
+            <div class="mensaje_Encriptador" id="caja"> 
+                <textarea name="text-area" class="recuadroBlanco" id="recuadroBlanco" cols="30" rows="10"></textarea>
+             
                 <button class="btn_copiar" onclick="copiar()">Copiar</button>
             </div>
 
