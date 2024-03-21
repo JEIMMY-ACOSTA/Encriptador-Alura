@@ -18,11 +18,10 @@ body {
 
 .header {
     width: 100%;
-    height: 150px;
     display: flex;
     flex-direction: row;
-    height: 80px;
-    top: 80px;
+    /* height: 80px; */
+    top: 40px;
     left: 40x;
     align-items: center;
     box-shadow: 0px -35px 138px 0px rgb(224, 222, 222);
@@ -30,7 +29,7 @@ body {
 
 .logo {
     width: auto;
-    height: 120px;
+
     height: 68px;
     top: 40px;
     left: 40x;
@@ -44,17 +43,17 @@ body {
 
 h1 {
     width: 100%;
-    height: 150px;
+
     display: flex;
     text-align: center;
     color: #eef0f4;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
+    font-size: 30px;
 }
 
-.cont-1 {
+/* .cont-1 {
     width: 700px;
     height: 400px;
     top: 80px;
@@ -62,16 +61,16 @@ h1 {
     display: flex;
     justify-content: center;
     position: absolute;
-}
+} */
 
 .texto {
+
     position: absolute;
-    position: absolute;
-    width: 700px;
-    
-    left: 240px;
-    top: 52px;
-    border-radius: 24px;
+    height: 352px;
+    width: 580px;
+    left: 220px;
+    top: 111px;
+    border-radius: 32px;
     box-shadow: 4px 4px 33px -8px rgb(224, 222, 222);
     font-family: "Inter";
     font-style: normal;
@@ -97,14 +96,19 @@ h1 {
 .area_text {
     width: 400px;
     height: 18px;
-    top: 560px;
-    left: 240px;
+    top: 530px;
+    left: 213px;
     gap: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0;
     position: absolute;
+  
+}
+
+#icono{
+    width: 1%;
 }
 
 .area_text p {
@@ -126,22 +130,22 @@ h1 {
 /*Botones*/
 .botones {
     display: flex;
-    width: 1000px;
+    width: 680px;
     height: 67px;
-    left: 240px;
-    top: 600px;
+    left: 215px;
+    top: 558px;
     gap: 24px;
     flex-direction: row;
     align-items: flex-start;
     padding: 5px 0;
     position: absolute;
     justify-content: center;
-background-color: antiquewhite;
+
 }
 
 /*Estilos de botones*/
 .btn_encriptar {
-    width: 528px;
+    width: 558px;
     height: 67px;
     border-radius: 24px;
     padding: 24px;
@@ -156,7 +160,7 @@ background-color: antiquewhite;
 }
 
 .btn_desencriptar {
-    width: 528px;
+    width: 558px;
     height: 67px;
     border-radius: 24px;
     padding: 22px;
@@ -174,8 +178,7 @@ background-color: antiquewhite;
 .btn_encriptar:hover,
 .btn_desencriptar:hover {
     margin: 10px;
-    width: 60%;
-    padding: 1.2%;
+    padding: 1.1%;
     transition: 0.1s;
 }
 
@@ -187,10 +190,10 @@ button {
 /*seccion derecha cont-2*/
 
 .cont-2 {
-    width: 450px;
-    height: 520px;
-    top: 118px;
-    left: 1040px;
+    width: 400px;
+    height: 522px;
+    top: 111px;
+    left: 1010px;
     border-radius: 32px;
     display: flex;
     position: absolute;
@@ -201,7 +204,7 @@ button {
 }
 
 .muñeco1 {
-    margin-top: 50px;
+    margin-top: 29px;
     width: 250px;
     height: 300;
 }
@@ -211,25 +214,30 @@ button {
 /*mensaje encriptado*/
 
 .mensaje_Encriptador {
+    width: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
-    gap: 16px;
-    position: absolute;
-    width: 315px;
-    height: 90px;
-    top: 350px;
-
+    /* height: 48px; */
+    /* top: 150px; */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
     text-align: center;
+    color: #495057;
+    align-content: center;
+    /* margin: -23px; */
+    /* padding: 0; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .mensaje_Encriptador h2 {
     width: 300px;
     height: 58px;
-    padding: 0;
-    margin: 0;
+    /* padding: 0; */
+    /* margin: 0; */
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -246,6 +254,9 @@ button {
 }
 
 .recuadroBlanco{
+
+    margin-top: 70px;
+    font-size: 16px;
     border: none;
     resize: none;
 }
@@ -266,9 +277,17 @@ button {
 .display-none{
     display: none;
 }
-footer{
-    top: 550px;
+
+.btn_copiar{
+    width: 212px;
+    height: 45px;
+    background-color: #032146;
+    border-radius: 32px;
+    color: #d8dfe8;
+    margin-top: 15px;
+    font-size: 16px;
 }
+
 
 .bottom {
     background-color:#f7f9fc;
@@ -278,12 +297,13 @@ footer{
     text-align: center;
     width: 100%;
     height: 30px;
-background-color: #343a40;
     font-family: "Inter";
     font-style: normal;
     font-weight: 450;
     font-size: 13px;
     justify-content: center;
+    margin: 590.2px 0 0 0;
+    
 }
 
 
