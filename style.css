@@ -1,6 +1,3 @@
-
-
-
 html {
     width: 100vw;
     height: 100vh;
@@ -11,7 +8,7 @@ html {
 body {
     margin: 0;
     height: 100vh;
-    background-image:url("./img/fondo.jpg");
+    background-image: url("./img/fondo.jpg");
     background-repeat: no-repeat;
 }
 
@@ -104,10 +101,10 @@ h1 {
     align-items: center;
     padding: 0;
     position: absolute;
-  
+
 }
 
-#icono{
+#icono {
     width: 1%;
 }
 
@@ -203,21 +200,30 @@ button {
     align-items: center;
 }
 
-.muñeco1 {
-    margin-top: 29px;
+.img-muñeco{
     width: 250px;
-    height: 300;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
 }
 
+
+.muñeco1 {
+    margin-top: 24px;
+    width: 305px;
+    height: 82%;
+
+}
 
 /*estilo a elementos internos del recuadro muñeco y textos*/
 /*mensaje encriptado*/
 
 .mensaje_Encriptador {
-    width: 300px;
+       /* width: 300px; */
+    /* height: 10px; */
     display: flex;
-    /* height: 48px; */
-    /* top: 150px; */
+
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -226,18 +232,19 @@ button {
     text-align: center;
     color: #495057;
     align-content: center;
-    /* margin: -23px; */
-    /* padding: 0; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -12px;
+
+
 }
 
 .mensaje_Encriptador h2 {
-    width: 300px;
-    height: 58px;
-    /* padding: 0; */
-    /* margin: 0; */
+    /* width: 300px;
+    height: 30%; */
+    display: flex;
+    flex-direction: column;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -245,20 +252,29 @@ button {
     line-height: 120%;
     text-align: center;
     color: #343a40;
+  
+}
+
+.title_mensage{
+
+    margin-top: 20px;
 }
 
 .cuadro_text {
+   
     display: flex;
+    flex-direction: column;
     padding: 0;
-    margin: 0;
+
 }
 
-.recuadroBlanco{
+.recuadroBlanco {
 
     margin-top: 70px;
     font-size: 16px;
     border: none;
     resize: none;
+    top: 10px;
 }
 
 .mensaje_Encriptador p {
@@ -273,24 +289,26 @@ button {
     line-height: 150%;
     text-align: center;
     color: #495057;
+    margin-top: 5px;
 }
-.display-none{
+
+.display-none {
     display: none;
 }
 
-.btn_copiar{
+.btn_copiar {
     width: 212px;
-    height: 45px;
+    height: 49px;
     background-color: #032146;
     border-radius: 32px;
     color: #d8dfe8;
-    margin-top: 15px;
+    margin-top: 2%;
     font-size: 16px;
 }
 
 
 .bottom {
-    background-color:#f7f9fc;
+    background-color: #f7f9fc;
     color: #032146;
     display: flex;
     flex-direction: column;
@@ -303,7 +321,7 @@ button {
     font-size: 13px;
     justify-content: center;
     margin: 590.2px 0 0 0;
-    
+
 }
 
 
@@ -416,12 +434,3 @@ button {
         margin-top: 900px;
     }
 }
-
-
-
-
-
-
-
-
-
